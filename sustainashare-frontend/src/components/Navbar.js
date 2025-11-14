@@ -4,10 +4,14 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   return (
     <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto flex justify-between">
-        <Link to="/" className="text-white text-lg">Sustain a Share</Link>
-        <div>
-          <Link to="/login" className="text-gray-300 hover:text-white mr-4">Login</Link>
+      <div className="container mx-auto flex justify-between items-center">
+        <Link to="/" className="text-white text-lg font-bold">Sustain a Share</Link>
+        <div className="flex gap-6">
+          <Link to="/" className="text-gray-300 hover:text-white">Home</Link>
+          <Link to="/about" className="text-gray-300 hover:text-white">About Us</Link>
+          <Link to="/services" className="text-gray-300 hover:text-white">Services</Link>
+          <Link to="/contact" className="text-gray-300 hover:text-white">Contact</Link>
+          <Link to="/login" className="text-gray-300 hover:text-white">Login</Link>
           <Link to="/register" className="text-gray-300 hover:text-white">Register</Link>
         </div>
       </div>
